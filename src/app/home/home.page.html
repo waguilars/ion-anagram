@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Juego anagrama
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,24 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Adivina el anagrama</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button expand="block" color="primary" routerLink="/jugar">
+      <ion-icon slot="start" name="play-circle"></ion-icon>
+      Jugar
+    </ion-button>
+
+    <ion-button expand="block" color="tertiary" routerLink="/alimentar">
+      <ion-icon slot="start" name="archive"></ion-icon>
+      Alimentar
+    </ion-button>
+
+    <ion-button expand="block" color="danger" (click)="exitApp()">
+      <ion-icon slot="start" name="exit"></ion-icon>
+      salir
+    </ion-button>
   </div>
 </ion-content>

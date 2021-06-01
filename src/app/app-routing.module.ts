@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'jugar',
+    loadChildren: () => import('./pages/jugar/jugar.module').then( m => m.JugarPageModule)
+  },
+  {
+    path: 'alimentar',
+    loadChildren: () => import('./pages/alimentar/alimentar.module').then( m => m.AlimentarPageModule)
+  },
 ];
 
 @NgModule({

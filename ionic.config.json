@@ -1,5 +1,7 @@
 {
   "name": "anagrama",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

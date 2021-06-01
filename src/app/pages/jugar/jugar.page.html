@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Adivina el anagrama</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+
+  <h3>Descripcion</h3>
+  <p> {{ palabraActual?.descripcion }} </p>
+
+  <h4>Palabra:</h4>
+  <p> {{ palabraActual?.palabra }} </p>
+
+  <ion-item>
+    <ion-label>Ingrese el anagrama</ion-label>
+    <ion-input [(ngModel)]="respuesta"></ion-input>
+  </ion-item>
+
+  <ion-button color="primary" (click)="comprobarRespuesta()">Comprobar</ion-button>
+
+
+
+</ion-content>
